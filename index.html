@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <title>Plain HTML</title>
+        <title>Froggy</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <style>
@@ -10,6 +10,7 @@
                 margin: 0px auto;
             }
             h1 {
+                font-size: 4rem;
                 text-align: center;
                 color: rgb(81, 99, 89);
             }
@@ -29,8 +30,14 @@
                 transform: rotate(-30deg);
             }
             table, th, td {
-                padding: 1px 10px;
+                padding: 0px 10px;
                 text-align: center;
+            }
+            table th {
+                padding: 10px;
+            }
+            table td {
+                border-radius: 12px;
             }
             hr {
                 width: 50%;
@@ -63,17 +70,28 @@
             }
             .link-git h4 {
                 position: absolute;
-                left: 55.5%;
+                left: 61.57%;
                 top: -270%;
                 color: #c3adad;
                 font-size: 30px;
                 transform: translateX(-50%);
-                z-index: -1;
+                z-index: 1;
+            }
+            .btn {
+                padding: 10px;
+                border: 2px solid #9b9a9a;
+                outline: none;
+                background-color: rgba(111, 200, 241, 0.918);
+                border-radius: 33px;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-weight:600;
+                position: relative;
+                top: -5px;
             }
         </style>
     </head>
     <body style="background-color: rgb(255, 234, 234);">
-        <h1 style="font-size: 4.3rem; text-align: center; margin-bottom: 80px;">Hi, There! 🐸</h1>
+        <h1 style="font-size: 4rem; text-align: center; margin-bottom: 80px;">Hi, There! 🐸</h1>
         <img src="/relaxedFrog.webp" alt="relaxedFrog" width="300" style="float: right;">
         <div class="special">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa saepe adipisci tempore eius porro, inventore possimus consequuntur placeat minus deleniti animi quod officia fuga corporis. Laudantium veniam accusamus culpa, facilis alias nulla amet dolorem? Non ipsam nobis ipsum molestiae, maxime, optio doloremque ipsa facilis labore veniam libero nesciunt ut nisi quis assumenda vitae? Ullam incidunt reprehenderit vel libero veritatis, consectetur consequatur quis et saepe voluptates, odit obcaecati cupiditate nostrum autem molestiae. Nam, dolor omnis quasi ipsam neque ut ullam tenetur est nostrum, aut, nisi nulla debitis hic voluptates. Officia, saepe..</p><span>?</span>
@@ -104,7 +122,7 @@
                 </tr>
                 <tr>
                     <td>Leapo</td>
-                    <td rowspan="6">Rezel-43M</td>
+                    <td rowspan="5">Rezel-43M</td>
                     <td>Spider</td>
                     <td>House</td>
                 </tr>
@@ -149,9 +167,12 @@
         </ol>
         <div class="link-git">
             <a href="https://github.com/mojammel-hoque" target="_blank" class="for-h4">
-                <img src="/githubLogo.webp" alt="AuthoratGithub-logo" width="60" style="padding-left: 400px; margin-top: -40px;">
+                <img src="/githubLogo.webp" alt="AuthoratGithub-logo" width="57" style="padding-left: 400px; margin-top: -40px;">
             </a>
-            <h4>My &nbsp; &nbsp; &nbsp; &nbsp; Author!</h4>
+            <h4>My &nbsp; &nbsp; &nbsp; Author!
+                <a href="/profile.html"><button class="btn">Show Profile</button></a>
+            </h4>
+            
         </div>
     </body>
 </html>
